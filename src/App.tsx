@@ -1,13 +1,55 @@
+import { useEffect, useState } from "react";
+
 const sections = [
   {
     title: "Webpage Development",
     subtitle: "Frontend, backend, full stack",
     stack: ["React", "TypeScript", "Rust", "Go", "Python", "PostgreSQL"],
     projects: [
-      "Flight booking app",
-      "Hospital booking management website",
-      "Class ring sale website",
-      "Profile websites"
+      {
+        title: "Flight booking app",
+        summary: "Placeholder description for a booking platform project.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/flight-booking",
+        screenshots: ["/placeholders/flight-booking-1.png"]
+      },
+      {
+        title: "Hospital booking management website",
+        summary: "Placeholder description for healthcare scheduling software.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/hospital-booking",
+        screenshots: ["/placeholders/hospital-booking-1.png"]
+      },
+      {
+        title: "Class ring sale website",
+        summary: "Placeholder description for a commerce storefront.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/class-ring",
+        screenshots: ["/placeholders/class-ring-1.png"]
+      },
+      {
+        title: "Profile websites",
+        summary: "Placeholder description for personal branding sites.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/profile-sites",
+        screenshots: ["/placeholders/profile-sites-1.png"]
+      }
     ]
   },
   {
@@ -15,11 +57,61 @@ const sections = [
     subtitle: "Interactive 2D/3D experiences",
     stack: ["Three.js", "WebGL", "GLSL"],
     projects: [
-      "Online 3D ring configurator",
-      "2D animation editor",
-      "3D clothes configurator",
-      "3D dental orthodontist tool",
-      "2D games"
+      {
+        title: "Online 3D ring configurator",
+        summary: "Placeholder description for a real-time configurator.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://www.fischer-trauringe.de/konfischerator/configurator",
+        screenshots: ["/placeholders/ring-configurator-1.png"]
+      },
+      {
+        title: "2D animation editor",
+        summary: "Placeholder description for a timeline-based editor.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/2d-animation-editor",
+        screenshots: ["/placeholders/2d-animation-1.png"]
+      },
+      {
+        title: "3D clothes configurator",
+        summary: "Placeholder description for a garment configurator.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/3d-clothes",
+        screenshots: ["/placeholders/3d-clothes-1.png"]
+      },
+      {
+        title: "3D dental orthodontist tool",
+        summary: "Placeholder description for a dental visualization tool.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://www.archform.com/",
+        screenshots: ["/placeholders/dental-tool-1.png"]
+      },
+      {
+        title: "2D games",
+        summary: "Placeholder description for interactive 2D games.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/2d-games",
+        screenshots: ["/placeholders/2d-games-1.png"]
+      }
     ],
     links: [
       {
@@ -34,8 +126,28 @@ const sections = [
     subtitle: "Applied ML for product teams",
     stack: ["RAG", "Stable Diffusion"],
     projects: [
-      "RAG (Retrieval Augmented Generation)",
-      "Image generation using Stable Diffusion"
+      {
+        title: "RAG (Retrieval Augmented Generation)",
+        summary: "Placeholder description for RAG workflows.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/rag",
+        screenshots: ["/placeholders/rag-1.png"]
+      },
+      {
+        title: "Image generation using Stable Diffusion",
+        summary: "Placeholder description for generative imaging.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/stable-diffusion",
+        screenshots: ["/placeholders/stable-diffusion-1.png"]
+      }
     ]
   },
   {
@@ -43,8 +155,28 @@ const sections = [
     subtitle: "Smart contracts and ZKP research",
     stack: ["Rust", "Solidity", "JavaScript"],
     projects: [
-      "Smart contract development",
-      "ZKP (zero-knowledge proof) research and development"
+      {
+        title: "Smart contract development",
+        summary: "Placeholder description for contract development work.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/smart-contracts",
+        screenshots: ["/placeholders/smart-contracts-1.png"]
+      },
+      {
+        title: "ZKP (zero-knowledge proof) research and development",
+        summary: "Placeholder description for ZKP research.",
+        details: [
+          "Role: Placeholder role description.",
+          "Scope: Placeholder scope and responsibilities.",
+          "Outcome: Placeholder measurable outcome."
+        ],
+        link: "https://example.com/zkp-research",
+        screenshots: ["/placeholders/zkp-1.png"]
+      }
     ]
   }
 ];
@@ -84,6 +216,26 @@ const videos = [
 ];
 
 export default function App() {
+  const [activeProject, setActiveProject] = useState<{
+    title: string;
+    summary: string;
+    details: string[];
+    link: string;
+    screenshots: string[];
+  } | null>(null);
+
+  useEffect(() => {
+    if (!activeProject) {
+      return;
+    }
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setActiveProject(null);
+      }
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [activeProject]);
   return (
     <div className="page">
       <header className="hero">
@@ -133,11 +285,22 @@ export default function App() {
                   <span key={item}>{item}</span>
                 ))}
               </div>
-              <ul>
-                {section.projects.map((project) => (
-                  <li key={project}>{project}</li>
-                ))}
-              </ul>
+              <div className="project-list">
+                {section.projects.map((project) => {
+                  return (
+                    <div key={project.title} className="project-item">
+                      <button
+                        className="project-toggle"
+                        type="button"
+                        onClick={() => setActiveProject(project)}
+                      >
+                        <span>{project.title}</span>
+                        <span className="project-toggle__icon">+</span>
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
               {section.links && (
                 <div className="card__links">
                   {section.links.map((link) => (
@@ -231,6 +394,56 @@ export default function App() {
         <span>© {new Date().getFullYear()} Gduo41</span>
         <span>Built with React + TypeScript</span>
       </footer>
+      {activeProject && (
+        <div
+          className="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${activeProject.title} details`}
+        >
+          <button
+            className="modal__backdrop"
+            type="button"
+            onClick={() => setActiveProject(null)}
+            aria-label="Close project details"
+          />
+          <div className="modal__content">
+            <header className="modal__header">
+              <div>
+                <p className="eyebrow">Project Detail</p>
+                <h2>{activeProject.title}</h2>
+              </div>
+              <button
+                className="modal__close"
+                type="button"
+                onClick={() => setActiveProject(null)}
+                aria-label="Close"
+              >
+                ×
+              </button>
+            </header>
+            <p className="modal__summary">{activeProject.summary}</p>
+            <ul className="modal__list">
+              {activeProject.details.map((detail) => (
+                <li key={detail}>{detail}</li>
+              ))}
+            </ul>
+            <div className="modal__meta">
+              <a href={activeProject.link} target="_blank" rel="noreferrer">
+                Visit project
+              </a>
+            </div>
+            <div className="project-screens">
+              {activeProject.screenshots.map((shot) => (
+                <div key={shot} className="project-shot">
+                  <span>Screenshot placeholder</span>
+                  <small>{shot}</small>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

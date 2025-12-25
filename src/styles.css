@@ -158,6 +158,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
+  align-items: start;
 }
 
 .card {
@@ -168,6 +169,7 @@ img {
   box-shadow: 0 20px 40px var(--shadow);
   display: grid;
   gap: 18px;
+  align-self: start;
 }
 
 .card__title h3 {
@@ -209,6 +211,128 @@ img {
 }
 
 .card__links a {
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.project-list {
+  display: grid;
+  gap: 12px;
+}
+
+.project-item {
+  border-top: 1px solid var(--edge);
+  padding-top: 12px;
+}
+
+.project-toggle {
+  width: 100%;
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  color: var(--ink);
+  text-align: left;
+}
+
+.project-toggle__icon {
+  font-size: 1.2rem;
+  color: var(--accent-dark);
+}
+
+.project-screens {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.project-shot {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px dashed var(--edge);
+  padding: 12px;
+  text-align: center;
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.project-shot span {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 100;
+}
+
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(12, 12, 12, 0.45);
+}
+
+.modal__content {
+  position: relative;
+  background: var(--card);
+  border-radius: 28px;
+  padding: 28px;
+  width: min(860px, 92vw);
+  max-height: 85vh;
+  overflow: auto;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--edge);
+  display: grid;
+  gap: 16px;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.modal__header h2 {
+  margin: 8px 0 0;
+  font-family: "Fraunces", serif;
+}
+
+.modal__close {
+  border: none;
+  background: #fff7ef;
+  color: var(--accent-dark);
+  font-size: 1.4rem;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.modal__summary {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.modal__list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.modal__meta a {
   font-weight: 600;
   color: var(--accent-dark);
 }

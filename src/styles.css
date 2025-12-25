@@ -218,6 +218,48 @@ img {
   align-items: start;
 }
 
+.section--videos {
+  gap: 24px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.video-card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 18px;
+  border: 1px solid var(--edge);
+  box-shadow: 0 20px 40px var(--shadow);
+  display: grid;
+  gap: 16px;
+}
+
+.video-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .pillars {
   display: grid;
   gap: 16px;

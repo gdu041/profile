@@ -56,6 +56,33 @@ const highlights = [
   { label: "Blockchain", value: "Rust & Solidity smart contracts" }
 ];
 
+const videos = [
+  {
+    title: "RNA Editing Demonstration",
+    url: "https://www.youtube.com/watch?v=TUOdb776q5U"
+  },
+  {
+    title: "Digital Dentistry Tool",
+    url: "https://www.youtube.com/watch?v=ftvtHm5kJ2c"
+  },
+  {
+    title: "Table Design Tool",
+    url: "https://www.youtube.com/watch?v=SIEU4Sq0U4I"
+  },
+  {
+    title: "Area calculation on 2D map",
+    url: "https://www.youtube.com/watch?v=_uhLyZuNyOI"
+  },
+  {
+    title: "Digital Orthodontic Treatment Tool",
+    url: "https://www.youtube.com/watch?v=47NOPCFJKGI"
+  },
+  {
+    title: "Table Design Tool",
+    url: "https://www.youtube.com/watch?v=SIEU4Sq0U4I"
+  },
+];
+
 export default function App() {
   return (
     <div className="page">
@@ -158,6 +185,30 @@ export default function App() {
         </div>
       </section>
 
+      <section className="section section--videos" id="videos">
+        <div className="section__header">
+          <h2>Video Highlights</h2>
+          <p>
+            Short demos and walkthroughs of recent product and technical work.
+          </p>
+        </div>
+        <div className="video-grid">
+          {videos.map((video) => (
+            <article key={video.title} className="video-card">
+              <div className="video-frame">
+                <iframe
+                  src={video.url}
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <h3>{video.title}</h3>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="section section--contact" id="contact">
         <div className="contact__card">
           <h2>Let’s build together</h2>
@@ -166,8 +217,8 @@ export default function App() {
             actionable plan.
           </p>
           <div className="contact__actions">
-            <a className="button" href="mailto:hello@gduo41.com">
-              hello@gduo41.com
+            <a className="button" href="mailto:hmh2175377@gmail.com">
+              hmh2175377@gmail.com
             </a>
             <a className="button button--ghost" href="https://github.com/gduo41">
               GitHub

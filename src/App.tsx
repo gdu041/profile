@@ -214,10 +214,6 @@ const videos = [
     title: "Digital Orthodontic Treatment Tool",
     url: "https://www.youtube.com/watch?v=47NOPCFJKGI"
   },
-  {
-    title: "Table Design Tool",
-    url: "https://www.youtube.com/watch?v=SIEU4Sq0U4I"
-  },
 ];
 
 const getYoutubeId = (url: string) => {

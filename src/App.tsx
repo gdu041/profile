@@ -240,7 +240,7 @@ export default function App() {
     <div className="page">
       <header className="hero">
         <div className="hero__content">
-          <p className="eyebrow">GDUO41</p>
+          <p className="eyebrow">GDU041</p>
           <h1>Experiences &amp; Selected Work</h1>
           <p className="lead">
             Building user-focused web products, interactive 3D tooling, and
@@ -383,7 +383,7 @@ export default function App() {
             <a className="button" href="mailto:hmh2175377@gmail.com">
               hmh2175377@gmail.com
             </a>
-            <a className="button button--ghost" href="https://github.com/gduo41">
+            <a className="button button--ghost" href="https://github.com/gdu041">
               GitHub
             </a>
           </div>
@@ -391,7 +391,7 @@ export default function App() {
       </section>
 
       <footer className="footer">
-        <span>© {new Date().getFullYear()} Gduo41</span>
+        <span>© {new Date().getFullYear()} Gdu041</span>
         <span>Built with React + TypeScript</span>
       </footer>
       {activeProject && (

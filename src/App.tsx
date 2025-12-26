@@ -8,47 +8,36 @@ const sections = [
     projects: [
       {
         title: "Flight booking app",
-        summary: "Placeholder description for a booking platform project.",
+        summary: "Book the best flights quickly and easily with just a few clicks.",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Online Check-in",
+          "Manage your bookings",
+          "Recommend the best flights based on your preferences"
         ],
-        link: "https://example.com/flight-booking",
-        screenshots: ["/placeholders/flight-booking-1.png"]
+        link: "https://www.wingie.com",
+        screenshots: ["/images/booking-flight.png"]
       },
       {
         title: "Hospital booking management website",
-        summary: "Placeholder description for healthcare scheduling software.",
+        summary: "",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "eCheck-in",
+          "See available time slots for your preferred provider or location",
+          "Reschedule or cancel existing appointments"
         ],
-        link: "https://example.com/hospital-booking",
-        screenshots: ["/placeholders/hospital-booking-1.png"]
+        link: "https://corewellhealth.org/patient-and-visitor/appointment-scheduling",
+        screenshots: ["/images/hospital.png"]
       },
       {
         title: "Class ring sale website",
-        summary: "Placeholder description for a commerce storefront.",
+        summary: "Fully customized class rings",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Free and Fast shipping on all orders",
+          "3D view of the class rings",
+          "View of the rings purchased from Etsy or Amazon"
         ],
-        link: "https://example.com/class-ring",
-        screenshots: ["/placeholders/class-ring-1.png"]
-      },
-      {
-        title: "Profile websites",
-        summary: "Placeholder description for personal branding sites.",
-        details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
-        ],
-        link: "https://example.com/profile-sites",
-        screenshots: ["/placeholders/profile-sites-1.png"]
+        link: "https://www.mementosjewelry.com/",
+        screenshots: ["/images/class-ring.png"]
       }
     ]
   },
@@ -59,67 +48,56 @@ const sections = [
     projects: [
       {
         title: "Online 3D ring configurator",
-        summary: "Placeholder description for a real-time configurator.",
+        summary: "3D view of the rings",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Realistic materials and lighting",
+          "Full customization options",
+          "High performance rendering"
         ],
         link: "https://www.fischer-trauringe.de/konfischerator/configurator",
-        screenshots: ["/placeholders/ring-configurator-1.png"]
+        screenshots: ["/images/ring-configurator.png"]
       },
       {
-        title: "2D animation editor",
-        summary: "Placeholder description for a timeline-based editor.",
+        title: "2D animation editor (LottieFiles)",
+        summary: "2D animation editor for creating and editing animations.",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Fully featured and runnable on the web browser",
+          "Near-native performance with WebGL rendering",
+          "Export animations in multiple formats"
         ],
-        link: "https://example.com/2d-animation-editor",
-        screenshots: ["/placeholders/2d-animation-1.png"]
+        link: "https://creator.lottiefiles.dev/",
+        screenshots: ["/images/lottiefiles.png"]
       },
       {
         title: "3D clothes configurator",
-        summary: "Placeholder description for a garment configurator.",
+        summary: "Customize the clothes in 3D with real-time rendering.",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "3D view",
         ],
-        link: "https://example.com/3d-clothes",
-        screenshots: ["/placeholders/3d-clothes-1.png"]
+        link: "https://www.simplio3d.com/3d-clothing-configurator/",
+        screenshots: ["/images/clothes.png"]
       },
       {
         title: "3D dental orthodontist tool",
-        summary: "Placeholder description for a dental visualization tool.",
+        summary: "Visualize dental orthodontic treatments in 3D with real-time rendering.",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Complete Orthodontic planning platform",
+          "3D visualization of dental treatments",
+          "High performance WebGL rendering"
         ],
         link: "https://www.archform.com/",
-        screenshots: ["/placeholders/dental-tool-1.png"]
+        screenshots: ["/images/archform.png"]
       },
       {
         title: "2D games",
-        summary: "Placeholder description for interactive 2D games.",
+        summary: "Solve puzzles to advance research using RNAs",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Solve puzzles to design RNAs that fold into specific shapes",
         ],
-        link: "https://example.com/2d-games",
-        screenshots: ["/placeholders/2d-games-1.png"]
+        link: "https://eternagame.org/",
+        screenshots: ["/images/rna.png"]
       }
     ],
-    links: [
-      {
-        label: "Ring configurator",
-        href: "https://www.fischer-trauringe.de/konfischerator/configurator"
-      },
-      { label: "Archform", href: "https://www.archform.com/" }
-    ]
   },
   {
     title: "AI/ML",
@@ -128,54 +106,81 @@ const sections = [
     projects: [
       {
         title: "RAG (Retrieval Augmented Generation)",
-        summary: "Placeholder description for RAG workflows.",
+        summary: "Knowledge-grounded assistants that answer with citations and fresh internal data.",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Built ingestion pipelines with chunking, metadata enrichment, and vector indexing.",
+          "Hybrid retrieval (BM25 + embeddings) with reranking for higher precision.",
+          "Added evaluation harnesses and guardrails to reduce hallucinations."
         ],
-        link: "https://example.com/rag",
-        screenshots: ["/placeholders/rag-1.png"]
+        link: "https://python.langchain.com/docs/use_cases/question_answering/",
+        screenshots: []
       },
       {
         title: "Image generation using Stable Diffusion",
-        summary: "Placeholder description for generative imaging.",
+        summary: "Custom image generation workflows for branded assets and design exploration.",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Fine-tuned models with LoRA and curated datasets for style consistency.",
+          "Built prompt tooling with negative prompts, seeds, and batch variations.",
+          "Integrated automated upscaling and export pipelines for production use."
         ],
-        link: "https://example.com/stable-diffusion",
-        screenshots: ["/placeholders/stable-diffusion-1.png"]
+        link: "https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/overview",
+        screenshots: []
       }
     ]
   },
   {
     title: "Blockchain Development",
     subtitle: "Smart contracts and ZKP research",
-    stack: ["Rust", "Solidity", "JavaScript"],
+    stack: ["Rust", "Solidity", "JavaScript", "Smart contract development", "ZKP RnD"],
     projects: [
       {
         title: "Smart contract development",
-        summary: "Placeholder description for contract development work.",
+        summary: "Cross-chain anonymous transaction protocol as the system of smart contracts.",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Rust, Solidity, Cosmwasm, Openzeppelin",
+          "Cosmwasm implementation of Webb protocol",
         ],
-        link: "https://example.com/smart-contracts",
-        screenshots: ["/placeholders/smart-contracts-1.png"]
+        link: "https://github.com/tangle-network/protocol-cosmwasm",
+        screenshots: ["/images/tangle.png"]
       },
       {
-        title: "ZKP (zero-knowledge proof) research and development",
-        summary: "Placeholder description for ZKP research.",
+        title: "NFT marketplace website",
+        summary: "Cusstomers can trade the NFT tokens",
         details: [
-          "Role: Placeholder role description.",
-          "Scope: Placeholder scope and responsibilities.",
-          "Outcome: Placeholder measurable outcome."
+          "Customers can swap the tokens",
+          "Similar to https://opensea.io/",
         ],
-        link: "https://example.com/zkp-research",
-        screenshots: ["/placeholders/zkp-1.png"]
+        link: "https://bitlectrolabs.com/",
+        screenshots: ["/images/nft.png"]
+      },{
+        title: "Defi Swap website",
+        summary: "Defi Swap website for token swapping and liquidity provision.",
+        details: [
+          "Customers can swap the tokens",
+          "Provides the functions of \"limit order\" or \"stop loss\"",
+        ],
+        link: "https://autonomy-cosmswap.vercel.app/",
+        screenshots: ["/images/swap.png"]
+      },
+      {
+        title: "EigenTrust protocol implementation",
+        summary: "Implementation of EigenTrust protocol by using the ZKP tools, like Halo2.",
+        details: [
+          "EigenTrust protocol is a reputation management system for peer-to-peer networks.",
+          "Rust, Halo2, ZKP",
+        ],
+        link: "https://github.com/privacy-ethereum/zk-eigentrust",
+        screenshots: []
+      },
+      {
+        title: "RnD for client-side proving benchmarks",
+        summary: "The project aims to benchmark the latest Zero-knowledge proving systems, and advance the research and development of zero-knowledge proving systems which are friendly to client-side proving.",
+        details: [
+          "The client-side proving is the zero-knowledge proving on devices like laptop or smartphone.",
+          "Rust, Noir, Circom, Halo2, ZKP",
+        ],
+        link: "https://github.com/privacy-ethereum/csp-benchmarks",
+        screenshots: ["/images/ethproof.png"]
       }
     ]
   }
@@ -214,6 +219,31 @@ const videos = [
     url: "https://www.youtube.com/watch?v=SIEU4Sq0U4I"
   },
 ];
+
+const getYoutubeId = (url: string) => {
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname.includes("youtu.be")) {
+      return parsed.pathname.replace("/", "") || null;
+    }
+    if (parsed.hostname.includes("youtube.com")) {
+      const vParam = parsed.searchParams.get("v");
+      if (vParam) {
+        return vParam;
+      }
+      const parts = parsed.pathname.split("/").filter(Boolean);
+      if (parts[0] === "embed" && parts[1]) {
+        return parts[1];
+      }
+      if (parts[0] === "shorts" && parts[1]) {
+        return parts[1];
+      }
+    }
+  } catch {
+    return null;
+  }
+  return null;
+};
 
 export default function App() {
   const [activeProject, setActiveProject] = useState<{
@@ -356,19 +386,34 @@ export default function App() {
           </p>
         </div>
         <div className="video-grid">
-          {videos.map((video) => (
-            <article key={video.title} className="video-card">
-              <div className="video-frame">
-                <iframe
-                  src={video.url}
-                  title={video.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-              <h3>{video.title}</h3>
-            </article>
-          ))}
+          {videos.map((video) => {
+            const videoId = getYoutubeId(video.url);
+            const thumbnailSrc = videoId
+              ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+              : "";
+
+            return (
+              <article key={video.title} className="video-card">
+                <a
+                  className="video-frame"
+                  href={video.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {thumbnailSrc ? (
+                    <img
+                      src={thumbnailSrc}
+                      alt={`${video.title} thumbnail`}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span>Video preview unavailable</span>
+                  )}
+                </a>
+                <h3>{video.title}</h3>
+              </article>
+            );
+          })}
         </div>
       </section>
 
@@ -434,12 +479,22 @@ export default function App() {
               </a>
             </div>
             <div className="project-screens">
-              {/* {activeProject.screenshots.map((shot) => (
-                <div key={shot} className="project-shot">
-                  <span>Screenshot placeholder</span>
-                  <small>{shot}</small>
-                </div>
-              ))} */}
+              {activeProject.screenshots.map((shot) => {
+                const normalizedShot = shot.startsWith("/")
+                  ? shot.slice(1)
+                  : shot;
+                const screenshotSrc = `${import.meta.env.BASE_URL}${normalizedShot}`;
+
+                return (
+                  <div key={shot} className="project-shot">
+                    <img
+                      src={screenshotSrc}
+                      alt={`${activeProject.name} screenshot`}
+                      loading="lazy"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

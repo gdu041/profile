@@ -434,12 +434,12 @@ export default function App() {
               </a>
             </div>
             <div className="project-screens">
-              {activeProject.screenshots.map((shot) => (
+              {/* {activeProject.screenshots.map((shot) => (
                 <div key={shot} className="project-shot">
                   <span>Screenshot placeholder</span>
                   <small>{shot}</small>
                 </div>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>

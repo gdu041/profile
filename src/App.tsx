@@ -4,7 +4,7 @@ const sections = [
   {
     title: "Webpage Development",
     subtitle: "Frontend, backend, full stack",
-    stack: ["React", "TypeScript", "Rust", "Go", "Python", "PostgreSQL"],
+    stack: ["React", "TypeScript", "Rust", "Go", "Python", "PostgreSQL", "NodeJS", "Express", "JAVA", "ASP.NET", "MySQL", "Spring boot", "Flask", "Laravel", "PHP", "NginX", "MongoDB", "Angular", "Django"],
     projects: [
       {
         title: "Flight booking app",
